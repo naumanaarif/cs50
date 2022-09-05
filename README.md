@@ -1,2 +1,2 @@
-# CS50
+# This is CS50.
 Solutions to all the problems in CS50
