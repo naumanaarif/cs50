@@ -1,12 +1,5 @@
 
-<style>
-.source {
-    font-style: italic;
-    opacity: 0.8;
-}
-</style>
-
-<img src="images/cs50.png" style="background: white;">
+![white](images/cs50.png)
 
 # About CS50
 
@@ -14,9 +7,4 @@ Introduction to Computer Science from Harvard, better known as **CS50**, is the 
 
 CS50 offers a series of introductory courses and Professional Certificate programs from Harvard that are open to learners of all backgrounds looking to explore *computer science*, *mobile app* and *game development*, *business technologies*, and the *art of programming*.
 
-<p class="source">
-    Source: <a href="https://www.edx.org/cs50">edx.org/cs50</a>
-</p>
-
-
-
+Source: [edX](https://www.edx.org/cs50)
