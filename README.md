@@ -9,15 +9,15 @@ CS50 offers a series of introductory courses and Professional Certificate progra
 
 Source: [edx.org/cs50](https://www.edx.org/cs50)
 
-# CS50 Courses
+# CS50 Solutions
 
-- [CS50x: Introduction to Computer Science](https://github.com/naumanaarif/CS50/tree/main/cs50/x)
-- [CS50P: Introduction to Programming with Python](https://github.com/naumanaarif/CS50/tree/main/cs50/python)
-- [CS50W: Web Programming with Python and JavaScript](https://github.com/naumanaarif/CS50/tree/main/cs50/web)
-- [CS50AI: Introduction to Artificial Intelligence with Python](https://github.com/naumanaarif/CS50/tree/main/cs50/ai)
+This repository contains solutions for the following [CS50 Courses](https://www.edx.org/cs50#cs50-courses).
+
+- [**CS50x**: Introduction to Computer Science](https://github.com/naumanaarif/CS50/tree/main/cs50/x)
+- [**CS50P**: Introduction to Programming with Python](https://github.com/naumanaarif/CS50/tree/main/cs50/python)
 
 # Academic Honesty
 
-CS50’s philosophy on academic honesty is best stated as “be reasonable.” The course recognizes that interactions with classmates and others can facilitate mastery of the course’s material. However, there remains a line between enlisting the help of another and submitting the work of another. The course’s policy characterizes both sides of that line.
+> CS50’s philosophy on academic honesty is best stated as “be reasonable.” The course recognizes that interactions with classmates and others can facilitate mastery of the course’s material. However, there remains a line between enlisting the help of another and submitting the work of another. The course’s policy characterizes both sides of that line.
 
-Read more about it [here]().
+Read more about [*CS50's Policy on Academic Honesty*](https://cs50.harvard.edu/x/2022/honesty/).
