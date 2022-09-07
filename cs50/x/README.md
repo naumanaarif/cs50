@@ -7,3 +7,7 @@ Introduction to the intellectual enterprises of computer science and the art of 
 Designed for concentrators and non-concentrators alike, with or without prior programming experience. Two thirds of CS50 students have never taken CS before. Among the overarching goals of this course are to inspire students to explore unfamiliar waters, without fear of failure, create an intensive, shared experience, accessible to all students, and build community among students.
 
 Source: [cs50.harvard.edu/x](https://cs50.harvard.edu/x)
+
+# Solutions
+
+- ### [CS50x 2022](https://github.com/naumanaarif/cs50/tree/main/cs50/x/2022)
