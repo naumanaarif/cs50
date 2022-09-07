@@ -4,4 +4,4 @@ Problem set available at [cs50.harvard.edu/x/2022/psets/0](https://cs50.harvard.
 
 # Solutions
 
-- [Scratch](https://cs50.harvard.edu/x/2022/psets/0/scratch)
+- [Scratch](https://github.com/naumanaarif/cs50/tree/main/cs50/x/2022/psets/0/scratch)
