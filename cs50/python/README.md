@@ -1,4 +1,4 @@
-![CS50P](https://github.com/naumanaarif/CS50/blob/main/images/cs50p.png)
+![CS50P](https://github.com/naumanaarif/CS50/blob/main/assets/images/cs50p.png)
 
 # CS50’s Introduction to Programming with Python
 

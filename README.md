@@ -1,5 +1,5 @@
 
-![CS50](images/cs50.png)
+![CS50](assets/images/cs50.png)
 
 # About CS50
 

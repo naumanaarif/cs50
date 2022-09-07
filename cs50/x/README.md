@@ -1,4 +1,4 @@
-![CS50x](https://github.com/naumanaarif/CS50/blob/main/images/cs50x.png)
+![CS50x](https://github.com/naumanaarif/CS50/blob/main/assets/images/cs50x.png)
 
 # CS50’s Introduction to Computer Science
 
