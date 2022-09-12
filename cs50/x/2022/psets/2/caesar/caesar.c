@@ -1,88 +1,73 @@
 #include <cs50.h>
 #include <ctype.h>
-#include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
-int count_letters(string text);
-int count_words(string text);
-int count_sentences(string text);
+bool only_digits(string s);
+char rotate(char chr, int key);
 
-int main(void)
+int main(int argc, string argv[])
 {
-    // Take text as input from the user
-    string text = get_string("Text: ");
-
-    // Count and store the number of letters, words and sentences
-    float letters = count_letters(text);
-    float words = count_words(text);
-    float sentences = count_sentences(text);
-
-    // Calculate Grade of the text using Coleman-Liau index
-    float L = (letters / words) * 100;
-    float S = (sentences / words) * 100;
-    float index = 0.0588 * L - 0.296 * S - 15.8;
-    int grade = round(index);
-
-    // Print Grade of the text
-    if (index < 1)
+    // Check command-line arguments
+    if (!(argc == 2) || !(only_digits(argv[1])))
     {
-        printf("Before Grade 1\n");
+        printf("Usage: ./caesar key\n");
+        return 1;
     }
-    else if (index > 16)
+
+    // Convert command-line argument to int and store as key
+    int key = atoi(argv[1]);
+
+    // Prompt user to type plaintext
+    string plaintext = get_string("plaintext:  ");
+
+    // Iterate through each character of plaintext
+    for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
-        printf("Grade 16+\n");
+        // Rotate character by key while preserving the case
+        plaintext[i] = rotate(plaintext[i], key);
     }
-    else
-    {
-        printf("Grade %i\n", grade);
-    }
+
+    // Print ciphertext
+    printf("ciphertext: %s\n", plaintext);
+
+    return 0;
 }
 
-// Count and return number of letters in a text
-int count_letters(string text)
+// Return true if string contains only digits, else return false
+bool only_digits(string s)
 {
-    int letters = 0;
-
-    // Iterate through each character in the text
-    for (int i = 0, n = strlen(text); i < n; i++)
+    // Iterate through each character of string
+    for (int i = 0, n = strlen(s); i < n; i++)
     {
-        if (isalpha(text[i]))
+        // If character is not a digit, return false
+        if (!(isdigit(s[i])))
         {
-            letters++;
+            return false;
         }
     }
-    return letters;
+    return true;
 }
 
-// Count and return number of words in a text
-int count_words(string text)
+// Return a character rotated by given key while preserving the case
+char rotate(char chr, int key)
 {
-    int words = 0;
-
-    // Iterate through each character in the text
-    for (int i = 0, n = strlen(text); i < n; i++)
+    // If character is an alphabet
+    if (isalpha(chr))
     {
-        if (text[i] == ' ')
+        // Uppercase character
+        if (isupper(chr))
         {
-            words++;
+            int ci = ((chr - 'A') + key) % 26;
+            return ci + 'A';
+        }
+        // Lowercase character
+        else if (islower(chr))
+        {
+            int ci = ((chr - 'a') + key) % 26;
+            return ci + 'a';
         }
     }
-    return words + 1;
-}
-
-// Count and return number of sentences in a text
-int count_sentences(string text)
-{
-    int sentences = 0;
-
-    // Iterate through each character in the text
-    for (int i = 0, n = strlen(text); i < n; i++)
-    {
-        if (text[i] == '.' || text[i] == '!' || text[i] == '?')
-        {
-            sentences++;
-        }
-    }
-    return sentences;
+    return chr;
 }
